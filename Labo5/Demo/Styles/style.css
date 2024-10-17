@@ -1,0 +1,26 @@
+h1, h2{
+    color: red;
+
+}
+
+body{
+    background-color: #1f1e33;
+}
+
+.styleYellow{
+    color: yellow;
+}
+
+#opmaak{
+    color: yellow;
+}
+
+section>h1{
+    color: green;
+    font-size: 5em;
+}
+
+section.styleYellow h1{
+    color: green;
+    font-size: 5em;
+}
