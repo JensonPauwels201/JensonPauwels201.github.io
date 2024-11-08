@@ -1,0 +1,13 @@
+.checklist{
+    display: list-item;
+    list-style-image: url("../images/EmptyCheckbox.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.checked{
+    display: list-item;
+    list-style-image: url("../images/TickedCheckbox.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
