@@ -1,0 +1,24 @@
+caption{
+    background-color: #AAAAC8
+}
+
+th{
+    background-color: #232546;
+    color: #C8BEF0;
+}
+
+.vrijeDag{
+    background-color: #FA7878;
+}
+
+tr:first-child{
+    background-color: #FFDCDC;
+}
+
+.vorigeMaand{
+    background-color: gray;
+}
+
+table{
+    border: 1px solid black;
+}
