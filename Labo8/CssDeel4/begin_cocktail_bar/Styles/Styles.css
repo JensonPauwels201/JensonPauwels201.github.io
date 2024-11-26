@@ -1,0 +1,85 @@
+body{
+    width:95%;
+    margin:auto;
+    font-family: Verdana, helvetica, arial, sans-serif;
+    font-size: 1.2em;
+}
+
+header img{
+    display:block;
+    margin:auto;
+}
+
+h1, h2{
+    color: #007e7e;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+article#weeklySpecials{
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+    padding: 2%;
+}
+
+section#origin{
+    float: right;
+    width: 70%;
+    padding-right: 1%;
+    box-sizing: border-box;
+}
+
+footer{
+    clear: both;
+    font-size: 50%;
+    text-align: center;
+}
+
+p#guarantee{
+    background-color: #A7CECE;
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    border: 2px dashed white;
+}
+
+p#guarantee img{
+    float: left;
+    width: 5%;
+    height: 5%;
+}
+
+article#weeklySpecials a:hover{
+    background-color: brown;
+}
+
+article#weeklySpecials h2#lemonBreeze{
+    color: yellow;
+}
+
+article#weeklySpecials h2#chaiChiller{
+    color: saddlebrown;
+}
+
+article#weeklySpecials h2#brainBrew{
+    color: #1F1E33;
+}
+
+.cursief{
+    font-style: italic;
+}
+
+.vet{
+    font-weight: bold;
+}

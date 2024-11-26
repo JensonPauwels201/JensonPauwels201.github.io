@@ -1,0 +1,51 @@
+body{
+    width: 90%;
+    margin: auto;
+    background-color: gray;
+}
+
+nav{
+    float: left;
+    width: 20%;
+    background-color: white;
+    height: 200px;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    height: 120px;
+}
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#midden{
+    float: left;
+    background-color: maroon;
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li{
+    list-style: none;
+}
+
+.breedte{
+    width: 400px; /*Geen invloed*/
+    background-color: green;
+    margin: 20px;
+    padding: 20px;
+}
