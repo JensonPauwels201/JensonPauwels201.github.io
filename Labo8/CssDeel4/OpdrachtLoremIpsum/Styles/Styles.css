@@ -5,3 +5,7 @@ section{
     padding: 10px;
     box-sizing: border-box;
 }
+
+body{
+    margin: 0;
+}

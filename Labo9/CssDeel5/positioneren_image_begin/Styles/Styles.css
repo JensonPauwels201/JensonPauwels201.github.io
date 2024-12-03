@@ -1,0 +1,32 @@
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    min-height: 280px;
+}
+
+h2, p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p{
+    line-height: 1.25;
+    font-size: 1.25em;
+}
+
+article:nth-child(2n+1) img{
+    float: left;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+article:nth-child(2n) img{
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}

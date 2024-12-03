@@ -1,7 +1,13 @@
-section{
-    display: inline-block;
-    width: 48%;
-    margin: 10px;
+body{
+    margin: 0;
+}
+
+.column{
+    float: left;
+    width: 50%;
+}
+.columnContent{
     padding: 10px;
-    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
 }
