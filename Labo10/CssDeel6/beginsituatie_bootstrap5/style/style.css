@@ -1,0 +1,7 @@
+.row > div:nth-child(2n) {
+    background-color: darkgray;
+}
+
+.row > div:nth-child(2n+1) {
+    background-color: lightgray;
+}

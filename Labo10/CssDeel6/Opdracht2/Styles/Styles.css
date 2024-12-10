@@ -1,0 +1,35 @@
+body{
+    width: 95%;
+    margin: auto;
+}
+
+.box{
+    height: 200px;
+    background-color: gray;
+}
+
+.col-md-3{
+    box-sizing: border-box;
+    margin: 1%;
+}
+
+.box:nth-child(2n){
+    background-color: darkgray;
+}
+
+.box:nth-child(2n+1){
+    background-color: lightgray;
+}
+
+@media screen and (max-width: 992px) {
+    .col-md-3{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-3{
+        width: 95%;
+        margin: auto;
+    }
+}

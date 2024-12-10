@@ -1,0 +1,35 @@
+body{
+    width: 50%;
+    margin:auto;
+    background-color:#1F1E33;
+    color: maroon;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#PageTitle{
+    font-size: 3em;
+    text-align: center;
+}
+
+.centerImage{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sectionTitle{
+    text-align: center;
+    font-size: 2em;
+}
+
+.IconImage{
+    height: 25%;
+    width: 25%;
+}
+
+.row{
+    margin-top: 10px;
+}
+
+.InformationSection{
+    margin-top: 25px;
+}
