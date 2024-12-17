@@ -1,0 +1,48 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.container .block{
+    padding:20px;
+    color: white;
+    font-size: 4em;
+    font-weight:bold;
+    text-align:center;
+}
+
+.block.block1{
+    background-color: darkmagenta;
+    grid-area: 1/1/2/4;
+
+ }
+.block.block2{
+    background-color: darkblue;
+    grid-area: 2/1/4/2;
+}
+.block.block3{
+    background-color: blue;
+    grid-area: 2/2/3/2;
+}
+.block.block4{
+    background-color: lightblue;
+    grid-area: 2/3/3/3;
+}
+.block.block5{
+    background-color: cyan;
+    grid-area: 3/2/4/4
+}
+.block.block6{
+    background-color: darkmagenta;
+    grid-area: 4/1/5/3;
+}
+.block.block7{
+    background-color: darkblue;
+    grid-area: 4/3/5/4;
+}
+.block.block8{
+    background-color: darkcyan;
+    grid-area: 5/1/6/4;
+}
