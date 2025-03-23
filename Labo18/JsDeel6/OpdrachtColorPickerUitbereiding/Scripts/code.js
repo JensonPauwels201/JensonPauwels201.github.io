@@ -29,11 +29,21 @@ const update = () =>{
 
 const saveSwatch = () => {
     let newSwatch =  document.createElement("div");
-    let colorValues = document.getElementsByTagName("span");
+    let colorValues = document.getElementsByClassName("slider");
     document.getElementById("divSwatches").appendChild(newSwatch);
     newSwatch = document.getElementById("divSwatches").lastElementChild;
     newSwatch.classList.add("savedSwatch");
-    newSwatch.style.backgroundColor = "rgb(" + colorValues[0].textContent + ", " + colorValues[1].textContent + ", " + colorValues[2].textContent + ")";
+    newSwatch.style.backgroundColor = "rgb(" + colorValues[0].value + ", " + colorValues[1].value + ", " + colorValues[2].value + ")";
+    let closeButton = document.createElement("input");
+    closeButton.setAttribute("type", "button");
+    closeButton.setAttribute("value", "x");
+    closeButton.addEventListener("click", deleteSwatch);
+    newSwatch.appendChild(closeButton);
+}
+
+const deleteSwatch = () => {
+    let swatchesList = document.getElementById("divSwatches");
+    swatchesList.removeChild(swatchesList.children[0]);
 }
 
 window.addEventListener("load", setup);
