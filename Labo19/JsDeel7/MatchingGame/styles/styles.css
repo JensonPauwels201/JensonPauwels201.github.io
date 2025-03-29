@@ -1,0 +1,25 @@
+#cardField{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 800px;
+    height: 600px;
+}
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+.hidden{
+    display: none;
+}
+
+.correct{
+    border: solid green 5px;
+}
+
+.incorrect{
+    border: solid red 5px;
+}
