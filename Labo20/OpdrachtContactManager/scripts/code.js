@@ -1,4 +1,5 @@
 let personen = [];
+let selectedPerson = "";
 
 const bewaarBewerktePersoon = () => {
     let lstLijst = document.getElementById("lstPersonen");
@@ -16,15 +17,31 @@ const bewaarBewerktePersoon = () => {
 
     // zorg ervoor dat de naam en voornaam ook aangepast en/of zichtbaar zijn in de lijst na updaten
     if (!hasErrors){
-        let nieuwePersoon={
-            voornaam: document.getElementById("txtVoornaam").value,
-            achternaam: document.getElementById("txtFamilienaam").value,
-            geboortedatum: document.getElementById("txtGeboorteDatum").value,
-            email: document.getElementById("txtEmail").value,
-            aantalKinderen: document.getElementById("txtAantalKinderen").value
+        if (selectedPerson === ""){
+            let nieuwePersoon={
+                voornaam: document.getElementById("txtVoornaam").value,
+                achternaam: document.getElementById("txtFamilienaam").value,
+                geboortedatum: document.getElementById("txtGeboorteDatum").value,
+                email: document.getElementById("txtEmail").value,
+                aantalKinderen: document.getElementById("txtAantalKinderen").value
+            }
+            personen.push(JSON.stringify(nieuwePersoon));
+            lstLijst.innerHTML += '<option value="' + nieuwePersoon.voornaam + '" id="' + (personen.length-1).toString() + '">'+ nieuwePersoon.voornaam + " " + nieuwePersoon.achternaam + '</option>';
         }
-        personen.push(JSON.stringify(nieuwePersoon));
-        lstLijst.innerHTML += '<option value="' + nieuwePersoon.voornaam + '" id="' + (personen.length-1).toString() + '">'+ nieuwePersoon.voornaam + " " + nieuwePersoon.achternaam + '</option>';
+        else{
+            let nieuwePersoon={
+                voornaam: document.getElementById("txtVoornaam").value,
+                achternaam: document.getElementById("txtFamilienaam").value,
+                geboortedatum: document.getElementById("txtGeboorteDatum").value,
+                email: document.getElementById("txtEmail").value,
+                aantalKinderen: document.getElementById("txtAantalKinderen").value
+            }
+            personen[selectedPerson] = JSON.stringify(nieuwePersoon);
+            let options = lstLijst.children;
+            options[selectedPerson].value= nieuwePersoon.voornaam;
+            options[selectedPerson].textContent = nieuwePersoon.voornaam + " " +nieuwePersoon.achternaam
+        }
+
     }
 };
 
@@ -35,6 +52,7 @@ const bewerkNieuwePersoon = () => {
     document.getElementById("txtGeboorteDatum").value = "";
     document.getElementById("txtEmail").value = "";
     document.getElementById("txtAantalKinderen").value = "";
+    selectedPerson = "";
 };
 
 const updateForm = () => {
@@ -50,9 +68,10 @@ const updateForm = () => {
 
     document.getElementById("txtVoornaam").value = geselecteerdePersoon.voornaam;
     document.getElementById("txtFamilienaam").value = geselecteerdePersoon.achternaam;
-    document.getElementById("txtGeboorteDatum").value = geselecteerdePersoon.Geboortedatum;
+    document.getElementById("txtGeboorteDatum").value = geselecteerdePersoon.geboortedatum;
     document.getElementById("txtEmail").value = geselecteerdePersoon.email;
     document.getElementById("txtAantalKinderen").value = geselecteerdePersoon.aantalKinderen;
+    selectedPerson = keuze;
 }
 
 // onze setup functie die de event listeners registreert
