@@ -1,0 +1,48 @@
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchbar{
+    width: 100%;
+    height: 2em;
+}
+
+#searchButton{
+    width: 100%;
+    background-color: green;
+}
+
+section{
+    margin-bottom: 25px;
+}
+
+.historySearch{
+    width: 20%;
+    background-color: black;
+    border-color: black;
+    margin-bottom: 5px;
+}
+
+.youtube{
+    background-color: red;
+}
+
+.google{
+    background-color: #0a53be;
+}
+
+.twitter{
+    background-color: cyan;
+}
+
+.instagram{
+    background-color: purple;
+}
+
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
